@@ -29,10 +29,10 @@ class ProductAdminForm(forms.ModelForm):
                 schema={
                     "type": "object",
                     "title": "Attributes",
-                    "properties": {
-                        "Test": {"type": "string"},
-                        "Total": {"type": "string"},
-                    },
+                    "properties": {},  # Un objet vide mais défini pour respecter le schéma
+                    "additionalProperties": {
+                        "type": "string"
+                    }
                 }
             )
         }
